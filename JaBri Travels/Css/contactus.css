@@ -1,0 +1,270 @@
+.contact-section {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-color: #e1b382;
+}
+
+/* ------------------- heading CSS starts ------------------------*/
+.contact-section .heading {
+    height: 50vh;
+    background-position: 50% 100%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section .heading h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #12343b;
+}
+
+.contact-section .heading h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.contact-section .heading h2 span {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    color: #12343b;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.contact-section .heading .line div {
+    margin: 0 0.2rem;
+}
+
+.line div:nth-child(1),
+.line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background: #12343b;
+    border-radius: 5px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #12343b;
+    border-radius: 50%;
+}
+
+
+/* ------------------- 1st Contact section CSS starts ------------------------*/
+
+
+.contact-body {
+    border-top: 1px solid #c89666;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contact-info {
+    margin: 1rem 0;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.contact-info span {
+    display: block;
+}
+
+.contact-info div {
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+
+.contact-info span .fas {
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #12343b;
+}
+
+.contact-info div span:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.contact-info .text {
+    padding-top: 0.4rem;
+}
+
+
+/* ------------------- 2nd Contact section ( social links ) CSS starts ------------------------*/
+
+
+.contact-footer {
+    padding: 1rem 0;
+}
+
+.contact-footer h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #12343b;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 1.6em;
+    width: 60px;
+    height: 60px;
+    color: #12343b;
+    border: 2px solid #c89666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+    color: #12343b;
+    border-color: #12343b;
+    ;
+    text-decoration: none;
+}
+
+
+/* ------------------- 3rd Contact section ( send us a message) CSS starts ------------------------*/
+
+
+.contact-form {
+    padding: 2rem 0;
+    border-top: 1px solid #c89666;
+}
+
+.contact-form form {
+    padding-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+
+.contact-form form div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+
+.send-btn {
+    font-size: 1.1em;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #12343b;
+    ;
+    border: 0.2rem solid #12343b;
+    ;
+    border-radius: 5rem;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    background: none;
+    transition: all 0.4s ease;
+}
+
+.send-btn:hover {
+    background: #12343b;
+    ;
+    color: #fff;
+}
+
+.contact-form>div img {
+    width: 60%;
+}
+
+.contact-form>div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/*---------- For Responsiveness -------------- */
+@media (max-width: 992px) {
+    .contact-section .heading {
+        height: 25vh;
+    }
+
+    .contact-form>div img {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .heading .text {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .heading .text {
+        width: 50%;
+    }
+
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-info {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

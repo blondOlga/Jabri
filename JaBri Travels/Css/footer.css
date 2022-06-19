@@ -1,0 +1,93 @@
+footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: #12343b;
+  color: white;
+}
+
+/* ------------------- Content Container CSS starts ------------------------*/
+footer .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .container .box {
+  flex: 0.5;
+  margin: 15px;
+  min-width: 100px;
+}
+
+footer .box h2 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #fff;
+  text-shadow: 3px 3px 20px #2d545e,
+    -2px 1px 30px #2d545e;
+}
+
+footer .box a {
+  color: #aaa;
+  text-shadow: 3px 3px 20px #2d545e,
+    -2px 1px 30px #2d545e;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer .box a i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: 0.5s linear;
+}
+
+footer .box a:hover,
+.box a:hover i {
+  color: white;
+  border-radius: 50%;
+}
+
+footer .socials-links a {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1em;
+  border-radius: 50%;
+  text-decoration: none;
+  height: 40px;
+  color: #aaa;
+  margin: 0.3rem;
+  transition: all 0.4s ease;
+}
+
+footer .address a {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+/*---------- For Responsiveness -------------- */
+@media (max-width: 450px) {
+  footer .box a i {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* ------------------- Bottom texts - CSS starts ------------------------*/
+.credit {
+  border-top: 1px solid #c89666;
+  background: #12343b;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.credit .a {
+  color: #e1b382;
+}

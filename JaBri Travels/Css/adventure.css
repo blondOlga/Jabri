@@ -1,0 +1,187 @@
+.adventure {
+    background-color: #e1b382;
+    padding: 1rem 5%;
+}
+
+.adventure .content {
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+/* ------------------- heading CSS starts ------------------------*/
+.adventure .heading {
+    height: 40vh;
+    background-position: 50% 100%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adventure .heading h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #12343b;
+}
+
+.adventure .heading h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.adventure .heading h2 span {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    color: #12343b;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.adventure .heading .line div {
+    margin: 0 0.2rem;
+}
+
+.adventure .heading .line div:nth-child(1) {
+    height: 3px;
+    width: 70px;
+    background: #12343b;
+    border-radius: 5px;
+}
+
+.adventure .heading .line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background: #12343b;
+    border-radius: 5px;
+}
+
+.adventure .heading .line {
+    display: flex;
+    align-items: center;
+}
+
+.adventure .heading .line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #12343b;
+    border-radius: 50%;
+}
+
+/* ------------------- Content Container CSS starts ------------------------*/
+.adventure .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 3rem;
+}
+
+.adventure .box-container .box {
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.adventure .box-container .box:hover {
+    flex: 1 1 20rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: white 0px 10px 20px 5px;
+}
+
+.adventure .box-container .box img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: #c89666 0px 54px 55px, #c89666 0px -12px 30px, #c89666 0px 4px 6px, #c89666 0px 12px 13px, #c89666 0px -3px 5px;
+}
+
+.adventure .box-container .box h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: white;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.adventure .box-container .box span {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #12343b;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.adventure .box-container .box p {
+    font-size: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px #c89666;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.adventure .box-container .box .btn {
+    font-size: 1.1em;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0 5px 25px #000000;
+    color: #fff;
+    border: 0.2rem solid #12343b;
+    background: #12343b;
+    border-radius: 5rem;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.adventure .box-container .box .btn:hover {
+    border: 0.2rem solid #12343b;
+    background: none;
+    color: #fff;
+}
+
+/*---------- For Responsiveness -------------- */
+@media (max-width: 1240px) {
+    .adventure {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .adventure .heading {
+        height: 20vh;
+    }
+}
+
+/*---------- For Responsiveness -------------- */
+
+
+/* ------------------- Content Container CSS starts ------------------------*/
+
+
+/* ------------------- heading CSS starts ------------------------*/

@@ -1,0 +1,117 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background-color: #e1b382;
+    padding: 2rem 6.5rem;
+}
+
+.about .content {
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+/* ------------------- heading CSS starts ------------------------*/
+.about .heading {
+    height: 40vh;
+    background-position: 50% 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .heading h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #12343b;
+}
+
+.about .heading h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.about .heading h2 span {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    color: #12343b;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.about .heading .line div {
+    margin: 0 0.2rem;
+}
+
+.about .heading .line div:nth-child(1),
+.line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background: #12343b;
+    border-radius: 5px;
+}
+
+.about .heading .line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background: #12343b;
+    border-radius: 5px;
+}
+
+.about .heading .line {
+    display: flex;
+    align-items: center;
+}
+
+.about .heading .line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #12343b;
+    border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .about .heading {
+        height: 20vh;
+    }
+}
+
+/* ------------------- main Content CSS starts ------------------------*/
+.about .content p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 2;
+    padding: 1rem 0;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 1240px) {
+    .about {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+}

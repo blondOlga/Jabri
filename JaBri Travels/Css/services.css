@@ -1,0 +1,145 @@
+.Services {
+    padding: 0rem 0rem;
+    background-color: #e1b382;
+}
+
+/* ------------------- heading CSS starts ------------------------*/
+.Services .heading {
+    height: 35vh;
+    background-position: 50% 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Services .heading h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #12343b;
+}
+
+.Services .heading h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.Services .heading h2 span {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    color: #12343b;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.Services .heading .line div {
+    margin: 0 0.2rem;
+}
+
+.Services .heading .line div:nth-child(1),
+.line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background: #12343b;
+    border-radius: 5px;
+}
+
+.Services .heading .line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background: #12343b;
+    border-radius: 5px;
+}
+
+.Services .heading .line {
+    display: flex;
+    align-items: center;
+}
+
+.Services .heading .line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #12343b;
+    border-radius: 50%;
+}
+
+/*---------- For Responsiveness -------------- */
+@media (max-width: 992px) {
+    .Services .heading {
+        height: 18vh;
+    }
+}
+
+/* ------------------- Content Container CSS starts ------------------------*/
+.services-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    background-color: #e1b382;
+}
+
+.services-box .box-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+.services-box .box-container .box {
+    padding: 2rem;
+    flex: 1 1 16rem;
+    box-shadow: #c89666 0px 54px 55px, #c89666 0px -12px 30px, #c89666 0px 4px 6px, #c89666 0px 12px 13px, #c89666 0px -3px 5px;
+}
+
+.services-box .box-container .box:hover {
+    transform: scale(1.1);
+    box-shadow: white 0px 10px 20px 5px;
+}
+
+
+.services-box .box-container .box i {
+    text-shadow: 2px 2px 3px #000;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #12343b;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.services-box .box-container .box i:hover {
+    transform: scale(1.2);
+    color: #12343b;
+}
+
+.services-box .box-container .box span {
+    font-size: 1.3rem;
+    color: #12343b;
+    display: block;
+    font-weight: 400;
+}
+
+.services-box .box-container .box p {
+    font-size: 1rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/*---------- For Responsiveness -------------- */
+@media (max-width: 1240px) {
+    .services-box {
+        padding: 3rem 2rem;
+    }
+}

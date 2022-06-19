@@ -1,0 +1,134 @@
+.explore {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../assets/famous.jpg) no-repeat;
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../assets/famous.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 2rem;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+/* ------------------- heading CSS starts ------------------------*/
+.explore .content span {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #c89666;
+    text-shadow: 3px 3px 20px #12343b,
+        -2px 1px 30px #12343b;
+}
+
+.explore .content h3 {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 3px 3px 20px #12343b,
+        -2px 1px 30px #12343b;
+    margin-top: 1rem;
+}
+
+.explore .content p {
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    color: rgb(201, 201, 201);
+    text-shadow: 3px 3px 20px #12343b,
+        -2px 1px 30px #12343b;
+    line-height: 2;
+}
+
+/*---------- For Responsiveness -------------- */
+@media (max-width: 450px) {
+    .explore .content h3 {
+        font-size: 2.7rem;
+    }
+
+    .explore {
+        padding: 10rem 2rem;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .explore {
+        padding: 10rem 2rem;
+    }
+}
+
+/* ------------------- explore form - CSS starts ------------------------*/
+.explore-form {
+    width: 90%;
+    margin: 1rem auto;
+    margin-top: -2rem;
+    background: #e1b382;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+    box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+    padding: 2rem 1.5rem;
+}
+
+/*---------- For Responsiveness -------------- */
+@media (max-width: 450px) {
+    .explore-form {
+        margin-top: -5rem;
+        width: 88%;
+    }
+}
+
+.explore-form form {
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.explore-form form .inputBox {
+    -webkit-box-flex: 1;
+    flex: 20 0 0rem;
+}
+
+.explore-form form .inputBox span {
+    font-size: 1.3rem;
+    color: #12343b;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+}
+
+.explore-form form .inputBox input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border-radius: 3rem;
+    border: 0.2rem solid #12343b;
+    font-size: 0.9rem;
+    color: #12343b;
+    text-transform: none;
+    background: none;
+    margin-top: 1rem;
+}
+
+.explore-form form .btn {
+    font-size: 1.1em;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 20px #c89666,
+        -2px 1px 30px #c89666;
+    color: #fff;
+    border: 0.2rem solid #12343b;
+    border-radius: 5rem;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    background: #12343b;
+    transition: all 0.4s ease;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 15rem;
+    flex: 1 1 15rem;
+}
+
+.explore-form form .btn:hover {
+    background: none;
+    color: #12343b;
+    border: 0.2rem solid #12343b;
+}
